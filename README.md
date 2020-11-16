@@ -18,7 +18,7 @@ let g:ale_lint_on_text_changed = 'never'
 let g:ale_linters_explicit = 1
 ```
 
-This will result in individual files being linted on save via `buf check lint --file`. Note that
+This will result in individual files being linted on save via `buf check lint --path`. Note that
 some lint checkers are dependent on checking multiple files at once, for example the lint checkers
 in the `PACKAGE_AFFINITY` category, so we still recommend your CI setup runs `buf check lint`.
 
