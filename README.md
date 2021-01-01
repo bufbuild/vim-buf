@@ -20,7 +20,7 @@ let g:ale_linters_explicit = 1
 
 This will result in individual files being linted on save via `buf lint --path`. Note that
 some lint rules are dependent on checking multiple files at once, for example the lint rules
-in the `PACKAGE_AFFINITY` category, so we still recommend your CI setup runs `buf check lint`.
+in the `PACKAGE_AFFINITY` category, so we still recommend your CI setup runs `buf lint`.
 
 Buf will be executed in your current directory, which results in your configuration being read
 from your current directory.
