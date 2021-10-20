@@ -5,6 +5,6 @@ call ale#linter#Define('proto', {
 \   'lint_file': 1,
 \   'output_stream': 'stdout',
 \   'executable': 'buf',
-\   'command': 'buf lint --path %s',
+\   'command': 'buf lint %s#include_package_files=true',
 \   'callback': 'ale#handlers#unix#HandleAsError',
 \})
