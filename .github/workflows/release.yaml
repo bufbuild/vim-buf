@@ -31,7 +31,5 @@ jobs:
       - name: Tag Release
         run: |
           git config --global user.password ${{ steps.generate_token.outputs.token }}
-          git tag -a v${{env.VERSION}} 2> /dev/null || echo 'local ref does not exist'
-          git push origin :v${{env.VERSION}} 2> /dev/null || echo 'remote ref does not exist'
-          git tag -a "v${{env.VERSION}}" -m "v${{env.VERSION}}"
-          git push origin v${{env.VERSION}}
+          git tag ${{env.VERSION}}
+          git push origin ${{env.VERSION}}
