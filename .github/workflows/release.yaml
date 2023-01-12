@@ -7,7 +7,7 @@ on:
         description: The version you intend to release (eg x.y.z)
 
 env:
-  VERSION: ${{ github.event.inputs.version }}
+  VERSION: v${{ github.event.inputs.version }}
 
 jobs:
   tag:
